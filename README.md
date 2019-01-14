@@ -6,7 +6,7 @@ This is a custom gesture recognizer for iOS that will recognize a sequence of sw
 
 To use this in your project copy [`SwipeSequenceGestureRecognizer.swift`](https://github.com/mluton/SwipeSequenceGestureRecognizer/blob/master/SwipeSequenceGestureRecognizer/SwipeSequenceGestureRecognizer.swift) into your project. By default, the swipe sequence is the same as the Konami Code D-pad sequence: up, up, down, down, left, right, left, right. This can be changed by setting the `requiredSequence` property.
 
-```
+```swift
 let swipeSequence = SwipeSequenceGestureRecognizer(target: self, action: #selector(self.handleSwipeSequence))
 swipeSequence.requiredSequence = [.down, .down, .up, .left]
 view.addGestureRecognizer(swipeSequence)
@@ -14,7 +14,7 @@ view.addGestureRecognizer(swipeSequence)
 
 The directions are provided by a `SwipeDirection` enum.
 
-```
+```swift
 enum SwipeDirection {
   case up
   case down
@@ -25,7 +25,7 @@ enum SwipeDirection {
 
 The handler will need to test for the `.ended` state specifically as it will be called while the gesture is being entered as the state changes and each swipe is being made.
 
-```
+```swift
 @objc func handleSwipeSequence(sender: UITapGestureRecognizer) {
   if sender.state == .ended {
     print("swipe sequence entered" )
