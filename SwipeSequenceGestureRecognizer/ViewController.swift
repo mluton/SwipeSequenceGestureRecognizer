@@ -12,9 +12,18 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    let swipeSequence = SwipeSequenceGestureRecognizer(target: self, action: #selector(self.handleSwipeSequence))
+    swipeSequence.requiredSequence = [.down, .down, .up, .left]
+    view.addGestureRecognizer(swipeSequence)
+
+    print("view did load")
   }
 
-
+  @objc func handleSwipeSequence(sender: UITapGestureRecognizer) {
+    if sender.state == .ended {
+      print("swipe sequence entered" )
+    }
+  }
 }
 

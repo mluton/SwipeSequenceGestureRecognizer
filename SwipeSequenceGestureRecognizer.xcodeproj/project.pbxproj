@@ -12,6 +12,7 @@
 		4E75889E21E9179300E85CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E75889C21E9179300E85CFE /* Main.storyboard */; };
 		4E7588A021E9179400E85CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E75889F21E9179400E85CFE /* Assets.xcassets */; };
 		4E7588A321E9179400E85CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7588A121E9179400E85CFE /* LaunchScreen.storyboard */; };
+		4E7588AB21E918A900E85CFE /* SwipeSequenceGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7588AA21E918A900E85CFE /* SwipeSequenceGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4E75889F21E9179400E85CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E7588A221E9179400E85CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E7588A421E9179400E85CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7588AA21E918A900E85CFE /* SwipeSequenceGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeSequenceGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				4E75889F21E9179400E85CFE /* Assets.xcassets */,
 				4E7588A121E9179400E85CFE /* LaunchScreen.storyboard */,
 				4E7588A421E9179400E85CFE /* Info.plist */,
+				4E7588AA21E918A900E85CFE /* SwipeSequenceGestureRecognizer.swift */,
 			);
 			path = SwipeSequenceGestureRecognizer;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				4E75889B21E9179300E85CFE /* ViewController.swift in Sources */,
 				4E75889921E9179300E85CFE /* AppDelegate.swift in Sources */,
+				4E7588AB21E918A900E85CFE /* SwipeSequenceGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
